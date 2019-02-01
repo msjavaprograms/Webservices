@@ -22,7 +22,7 @@
 					
 					<configuration>
 						<wsdlDirectory>${project.basedir}/src/main/resources/wsdl</wsdlDirectory>
-						<wsdlFile>UserProfile.wsdl</wsdlFile>
+						<wsdlFile>EmployeeProfile.wsdl</wsdlFile>
 						
 						<packageName>com.msinfo.code.generate.ws</packageName>
 						
