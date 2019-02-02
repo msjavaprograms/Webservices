@@ -1,6 +1,7 @@
 
-package com.msinfo.code.generate.ws;
+package com.msjavasolutions.employeeprofile.schema.employeeprofile;
 
+import java.io.Serializable;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlType;
@@ -12,29 +13,32 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="EmployeeProfile">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="userName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="email" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="address" type="{http://msjavasolutions.com/employeeProfile/schema/EmployeeProfile.xsd}Address" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="EmployeeProfile"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="userName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="email" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="address" type="{http://msjavasolutions.com/employeeProfile/schema/EmployeeProfile.xsd}Address" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "EmployeeProfile", namespace = "http://msjavasolutions.com/employeeProfile/schema/EmployeeProfile.xsd", propOrder = {
+@XmlType(name = "EmployeeProfile", propOrder = {
     "userName",
     "email",
     "address"
 })
-public class EmployeeProfile {
+public class EmployeeProfile
+    implements Serializable
+{
 
+    private final static long serialVersionUID = -1L;
     protected String userName;
     protected String email;
     protected Address address;

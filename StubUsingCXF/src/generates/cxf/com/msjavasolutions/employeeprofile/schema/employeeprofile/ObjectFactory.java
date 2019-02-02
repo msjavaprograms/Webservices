@@ -1,5 +1,5 @@
 
-package com.msinfo.code.generate.ws;
+package com.msjavasolutions.employeeprofile.schema.employeeprofile;
 
 import javax.xml.bind.annotation.XmlRegistry;
 
@@ -7,7 +7,7 @@ import javax.xml.bind.annotation.XmlRegistry;
 /**
  * This object contains factory methods for each 
  * Java content interface and Java element interface 
- * generated in the com.msinfo.code.generate.ws package. 
+ * generated in the com.msjavasolutions.employeeprofile.schema.employeeprofile package. 
  * <p>An ObjectFactory allows you to programatically 
  * construct new instances of the Java representation 
  * for XML content. The Java representation of XML 
@@ -23,18 +23,10 @@ public class ObjectFactory {
 
 
     /**
-     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: com.msinfo.code.generate.ws
+     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: com.msjavasolutions.employeeprofile.schema.employeeprofile
      * 
      */
     public ObjectFactory() {
-    }
-
-    /**
-     * Create an instance of {@link GetEmployeeProfileResponse }
-     * 
-     */
-    public GetEmployeeProfileResponse createGetEmployeeProfileResponse() {
-        return new GetEmployeeProfileResponse();
     }
 
     /**
@@ -43,14 +35,6 @@ public class ObjectFactory {
      */
     public EmployeeProfile createEmployeeProfile() {
         return new EmployeeProfile();
-    }
-
-    /**
-     * Create an instance of {@link GetEmployeeProfile }
-     * 
-     */
-    public GetEmployeeProfile createGetEmployeeProfile() {
-        return new GetEmployeeProfile();
     }
 
     /**

@@ -1,11 +1,13 @@
 
-package com.msinfo.code.generate.ws;
+package com.msjavasolutions.employeeprofile;
 
+import java.io.Serializable;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
+import com.msjavasolutions.employeeprofile.schema.employeeprofile.EmployeeProfile;
 
 
 /**
@@ -14,15 +16,15 @@ import javax.xml.bind.annotation.XmlType;
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="EmployeeProfile" type="{http://msjavasolutions.com/employeeProfile/schema/EmployeeProfile.xsd}EmployeeProfile"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="EmployeeProfile" type="{http://msjavasolutions.com/employeeProfile/schema/EmployeeProfile.xsd}EmployeeProfile"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -32,8 +34,11 @@ import javax.xml.bind.annotation.XmlType;
     "employeeProfile"
 })
 @XmlRootElement(name = "GetEmployeeProfileResponse")
-public class GetEmployeeProfileResponse {
+public class GetEmployeeProfileResponse
+    implements Serializable
+{
 
+    private final static long serialVersionUID = -1L;
     @XmlElement(name = "EmployeeProfile", required = true)
     protected EmployeeProfile employeeProfile;
 
