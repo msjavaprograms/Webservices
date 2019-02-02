@@ -28,6 +28,11 @@
 						<wsdlOption>
 							                        
 							<wsdl>${project.basedir}/src/main/resources/wsdl/EmployeeProfile.wsdl</wsdl>
+							
+							<!-- <wsdlLocation>classpath:wsdl/EmployeeProfile.wsdl</wsdlLocation> -->
+							
+							<!-- <serviceName>EmployeeProfileDetailSerivce</serviceName> -->
+							
 							<bindingFiles>
 								<bindingFile>${project.basedir}/src/main/resources/wsdl/global.xjb</bindingFile>
 							</bindingFiles>
